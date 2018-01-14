@@ -48,7 +48,7 @@ int main()
 		{
 			for (auto l{ k }; l <= min((k - 1) * M, N); l++)
 			{
-				dp[k][l] = min(dp[k][l], dp[k - 1][l]);
+				dp[k][l] = dp[k - 1][l];
 			}
 
 			for (auto l{ 1 }; l <= min(M, N); l++)
